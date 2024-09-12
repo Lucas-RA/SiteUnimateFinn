@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Unimate Finn</title>
+
+    <!-- Google Fonts -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap");
+    </style>
+
+    <!-- BS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <div class="geral">
+      <header class="header-page">
+        <img src="./images/logo.svg" alt="Logo Unimate Finn" />
+        <h1>Unimate Finn</h1>
+
+        <nav class="menu">
+          <ol>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre o Robô</a></li>
+            <li><a href="#arma">Arma</a></li>
+            <li><a href="#hardware">Hardware</a></li>
+            <li><a href="#integrantes">Integrantes</a></li>
+          </ol>
+        </nav>
+      </header>
+
+      <section class="home" id="home">
+        <div class="conteudo">
+          <h2>Gigantes da FIAP</h2>
+          <p>
+            Nós somos os Gigantes da FIAP, e iremos apresentar o projeto da
+            ROBOCUP, o mesmo envolve a documentação e o desenvolvimento de um
+            robô do estilo rover para fazer a integração de todas as disciplinas
+            do 1 ano de SI e dos alunos da graduação da FIAP. A competição é um
+            confronto entre dois robôs, onde quem estourar a bexiga adversária
+            primeiro, vence.
+          </p>
+        </div>
+        <div class="imagem-principal">
+          <img
+            src="./images/RoboAtual.jpg"
+            alt="Imagem referente a versão atual do robô"
+          />
+        </div>
+      </section>
+
+      <section class="sobre" id="sobre">
+        <h2>Sobre o Robô</h2>
+        <p>Alguns fatos sobre o Unimate Finn, nosso robô.</p>
+        <div class="espacoIcones">
+          <div class="caixa">
+            <div class="icones">
+              <img src="./images/IconNome.svg" alt="ícone do robô unimate" />
+              <h4>O Nome</h4>
+              <p>
+               O nome foi inspirado no primeiro robô industrial e em um personagem de "Gigantes de Aço".
+              </p>
+            </div>
+          </div>
+
+          <div class="caixa">
+            <div class="icones">
+              <img src="./images/IconArma.svg" alt="ícone de um alvo" />
+              <h4>Nossa Arma</h4>
+              <p>
+                Foi desenvolvida para atingir a bexiga adversária com precisão,
+                rapidez e eficiência.
+              </p>
+            </div>
+          </div>
+          <div class="caixa">
+            <div class="icones">
+              <img src="./images/IconBluetooth.svg" alt="ícone de Bluetooth" />
+              <h4>Controle Robô</h4>
+              <p>
+                Nosso robô será controlado pelo celular de um de nossos
+                integrantes, via Bluetooth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="armas" id="arma">
+        <div class="image1">
+          <img src="./images/ImagemArma.png" alt="Imagem do robô com a arma montada" />
+        </div>
+
+        <div class="text1">
+          <p>
+           Nossa arma é equipada com uma corrediça que possui um motor DC posicionado abaixo dela, apoiado por um suporte. Para aumentar o atrito com a roda, adicionamos fita isolante à corrediça. A arma dispara bolas de isopor com agulhas, projetadas para estourar as bexigas adversárias. Após 15 segundos, o motor inverte sua polaridade e retorna a arma para dentro do robô, pronta para um novo disparo.
+          </p>
+        </div>
+
+        <div class="image2">
+          <img src="./images/Armateste.png" alt="Imagem Desenho da arma" />
+        </div>
+
+        <div class="text2">
+          <p>
+            Este é o desenho do projeto da nossa arma, onde também analisamos as medidas, garantindo que estejam dentro das regras da competição. Focamos em melhorar a estabilidade e o alcance, realizando ajustes na montagem para otimizar seu desempenho. Essas alterações visam garantir o melhor funcionamento possível durante a competição.
+          </p>
+        </div>
+
+        <div class="image3">
+          <img src="./images/SentidoArma.png" alt="Imagem Desenho do Sentido da arma" />
+        </div>
+
+        <div class="text3">
+          <p>
+            Este desenho ilustra o funcionamento e a direção de ativação da nossa arma, garantindo que ela esteja dentro das regras da competição. Além disso, a arma foi projetada para ter um alcance ideal, permitindo que acerte com precisão a bexiga do robô adversário, otimizando seu desempenho durante o combate.
+          </p>
+        </div>
+      </section>
+
+      <section class="componentes" id="hardware">
+        <div>
+          <h2>Hardware do Unimate</h2>
+          <p>
+            Hardware necessário para a montagem do Unimate Finn
+          </p>
+        </div>
+
+      
+        <div class="hardware">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Movimentação
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>Para a movimentação do nosso robô estilo rover, utilizamos 2 motores DC com rodas para propulsão e direção. O Driver de motor L298 controla a velocidade e o sentido de rotação dos motores. O soquete de pilhas fornece a energia necessária, enquanto o módulo Bluetooth permite o controle remoto. Por fim, o Arduino Mega gerencia toda a lógica de movimentação e comunicação entre os componentes.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Arma
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Para a montagem da nossa arma, utilizamos uma corrediça telescópica que controla sua movimentação, 4 chaves de fim de curso para ativação precisa, e um motor DC com roda que movimenta a corrediça, projetando a arma para frente. Bolinhas de isopor de 2,5 cm, equipadas com agulhas, são usadas para perfurar a bexiga adversária ao contato, garantindo a eficácia da arma.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Design
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Para o design, utilizamos uma fita LED RGB de 12V e LEDs de 3mm para iluminação, além de uma chave de alavanca para ligar e desligar o robô. Barra de pinos macho, resistores de 390 ohms e transistores BD 135 foram usados para controle de corrente. Jumpers conectaram os componentes, garantindo as ligações e a distribuição eficiente de energia durante a montagem.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="integrantes" id="integrantes">
+        <div class="card">
+          <img src="./images/Enzo2.png" alt="Imagem do Integrante do grupo: Enzo Grisolia de Souza" class="image-card" />
+          <h3>Enzo Grisolia de Souza</h3>
+          <p>
+            Responsável pela Arquitetura do Robô
+          </p>
+          <a
+            href="https://www.linkedin.com/in/enzo-grisolia-de-souza-a592582b6/"
+            target="_blank"
+            class="btn btn-dark"
+            >Linkedin</a
+          >
+        </div>
+
+        <div class="card">
+          <img src="./images/Borges.jpg" alt="Imagem do Integrante do grupo: Gabriel Borges Medeiros" class="image-card" />
+          <h3>Gabriel Borges Medeiros</h3>
+          <p>
+            Responsável pelo Design do Robô
+          </p>
+          <a
+            href="https://www.linkedin.com/in/gabriel-borges-medeiros-5808152b6/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+            target="_blank"
+            class="btn btn-dark"
+            >Linkedin</a
+          >
+        </div>
+
+        <div class="card">
+          <img src="./images/Nesti2.png" alt="Imagem do Integrante do grupo: Guilherme de Nicola Nesti" class="image-card" />
+          <h3>Guilherme de Nicola Nesti</h3>
+          <p>
+           Responsável pelo Design do Robô
+          </p>
+          <a
+            href="https://www.linkedin.com/in/guilherme-nesti-84aa6a280/"
+            target="_blank"
+            class="btn btn-dark"
+            >Linkedin</a
+          >
+        </div>
+
+        <div class="card">
+          <img src="./images/Lucas.png" alt="Imagem do Integrante do grupo: Lucas Rodrigues Alves" class="image-card" />
+          <h3>Lucas Rodrigues Alves</h3>
+          <p>
+            Responsável pelo Progresso e Gestão do Projeto.
+          </p>
+          <a
+            href="https://www.linkedin.com/in/lucas-rodrigues-alves-101321268/"
+            target="_blank"
+            class="btn btn-dark"
+            >Linkedin</a
+          >
+        </div>
+
+        <div class="card">
+          <img src="./images/Matehus2.png" alt="Imagem do Integrante do grupo: Matheus Lion Muzzi" class="image-card" />
+          <h3>Matheus Lion Muzzi</h3>
+          <p>
+            Responsável pela Arquitetura do Robô
+          </p>
+          <a
+            href="http://www.linkedin.com/in/matheus-lion-3354282b7"
+            target="_blank"
+            class="btn btn-dark"
+            >Linkedin</a
+          >
+        </div>
+      </section>
+
+      
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
