@@ -83,7 +83,8 @@ img {
 
 .menu ol {
     display: flex;
-    gap: 1.5rem;
+    gap: 1.4rem;
+    flex-wrap: wrap;
 }
 
 .home {
@@ -398,12 +399,11 @@ h2 {
 }
 
 .cards-competicao {
-    max-width: 1500px;
     padding: 1.5rem;
     display: grid;
     gap: 2rem;
 
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     margin-top: 4rem;
     margin-bottom: 3rem;
     align-content: center;
@@ -592,10 +592,12 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     gap: .5rem;
+    align-items: center;
 }
 
 .contato-rodape ol {
     padding-left: 0;
+
 }
 
 .contato-rodape h4 {
@@ -660,6 +662,18 @@ footer {
     .home {
         flex-direction: column;
         flex-wrap: wrap;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    .menu ol {
+        gap: 0.8rem;
+    }
+
+    .menu ol li {
+        font-size: 1.3rem;
     }
 
     .armas {
@@ -771,6 +785,21 @@ footer {
 }
 
 @media(max-width: 530px) {
+    .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    .menu ol {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .menu ol li {
+        font-size: 1.2rem;
+    }
+
     .espacoIcones {
         flex-direction: column;
         align-items: center;
