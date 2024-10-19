@@ -2,7 +2,6 @@
     --color-dark: #000000;
     --color-unimatefinn: #2F5F9E;
     --color-white: #FCF7F7 --transition: .5s;
-
 }
 
 body {
@@ -23,6 +22,10 @@ ol {
     list-style: none;
 }
 
+i {
+    font-size: 3.5rem;
+}
+
 a {
     color: var(--color-dark);
     text-decoration: none;
@@ -31,7 +34,7 @@ a {
 
 img {
     max-width: 90%;
-    border-radius: 10%;
+    border-radius: .7rem;
     object-fit: cover;
     object-position: center center;
 }
@@ -75,6 +78,7 @@ img {
     align-items: flex-end;
     justify-content: flex-end;
     margin: 0 1.5rem 0 0;
+    flex-wrap: wrap;
 }
 
 .menu ol {
@@ -83,8 +87,7 @@ img {
 }
 
 .home {
-    padding: 4rem;
-
+    padding: 3rem;
     display: flex;
     align-items: center;
     gap: 4rem;
@@ -93,12 +96,13 @@ img {
 
 .home h2 {
     font-weight: 800;
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
 }
 
 .conteudo {
-    width: 50%;
+    /* width: 50%; */
+    /* NÃO CONSEGUIMOS DIMINUIR O TAMANHO DA IMAGEM/SESSÃO */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -113,7 +117,7 @@ h2 {
 }
 
 .conteudo p {
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 .imagem-principal {
@@ -152,6 +156,7 @@ h2 {
 .sobre p {
     padding-bottom: 1rem;
     font-size: 1.8rem;
+
 }
 
 .caixa:nth-child(2):before {
@@ -159,7 +164,7 @@ h2 {
     position: absolute;
     height: 20px;
     top: 40%;
-    left: 20%;
+    left: 16%;
     transform: translateY(-50%);
     transform: translateX(17%);
 }
@@ -169,7 +174,7 @@ h2 {
     position: absolute;
     height: 20px;
     top: 40%;
-    left: 50%;
+    left: 47%;
     transform: translateY(50%);
     transform: translateX(17%);
 }
@@ -184,7 +189,6 @@ h2 {
 }
 
 .espacoIcones {
-    width: 100%;
     padding-top: 10px;
     display: flex;
     justify-content: center;
@@ -194,6 +198,8 @@ h2 {
 
 .caixa {
     width: 30%;
+
+
 }
 
 .caixa h4 {
@@ -201,36 +207,37 @@ h2 {
 }
 
 .icones {
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 80%;
+    gap: 1.5rem;
+    text-align: center;
 }
 
 .icones p {
     line-height: 1.6;
     font-size: 1.4rem;
+    text-align: center;
 }
-
-
 
 .armas {
     background-color: var(--color-unimatefinn);
     min-height: 50vh;
-    padding-top: 4rem;
-    padding-bottom: 5rem;
-
+    padding: 4rem 2rem 5rem 2rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 2rem;
-
+    grid-template-rows: repeat(3, auto-fit);
+    gap: 1rem;
     font-size: 1.8rem;
     align-items: center;
-
     align-content: center;
     justify-content: center;
+}
+
+.text1 {
+    grid-column: 2/4;
 }
 
 .image2 {
@@ -240,7 +247,7 @@ h2 {
 
 .text2 {
     grid-row-start: 2;
-    grid-column: 2/3;
+    grid-column: 1/3;
 }
 
 .image3 {
@@ -249,6 +256,14 @@ h2 {
 
 .text3 {
     grid-row-start: 3;
+    grid-column: 2/4;
+}
+
+.text1,
+.text2,
+.text3 {
+    font-weight: 500;
+    font-size: 2rem;
 }
 
 .image1,
@@ -264,7 +279,6 @@ h2 {
     margin: auto;
     margin-top: 6rem;
     text-align: center;
-
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -280,6 +294,7 @@ h2 {
     flex-direction: column;
     justify-items: flex-start;
     font-size: 1.6rem;
+    margin-bottom: 3rem;
 }
 
 .componentes h2 {
@@ -289,6 +304,170 @@ h2 {
 .hardware button {
     font-size: 2.5rem;
 }
+
+/* seção slides */
+.robo-montagem {
+    margin-top: 5rem;
+    width: 60%;
+    margin: auto;
+    min-height: 50vh;
+}
+
+.robo-montagem h2 {
+    margin-top: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.robo-montagem a {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--color-dark);
+    padding: auto;
+    margin: auto;
+    background-color: var(--color-unimatefinn);
+    transition: var(--transition);
+}
+
+.robo-montagem img {
+    height: 550px;
+    object-position: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+        0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.carousel-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    object-fit: contain;
+    width: 80%;
+}
+
+
+.video {
+    min-height: 60vh;
+    background-color: var(--color-unimatefinn);
+    margin-top: 6rem;
+}
+
+.video div {
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 1.6rem;
+}
+
+.video h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.videos-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+.video iframe {
+    margin-bottom: 4rem;
+    width: 60%;
+}
+
+
+.competicao {
+    background-color: var(--color-unimatefinn);
+    min-height: 60vh;
+    padding: 4rem 2rem;
+
+    font-size: 1.5rem;
+}
+
+.competicao h2 {
+    font-weight: 800;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.cards-competicao {
+    max-width: 1500px;
+    padding: 1.5rem;
+    display: grid;
+    gap: 2rem;
+
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    align-content: center;
+    justify-content: center;
+}
+
+.cards-competicao h3 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    transition: color var(--transition) ease, transform var(--transition) ease;
+}
+
+.cards-competicao h3:hover {
+
+    transform: scale(1.05);
+}
+
+.robocup,
+.next {
+    background-color: #0a4593;
+    padding: 15px 15px 40px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: first baseline;
+    gap: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.robocup {
+    transition: var(--transition);
+}
+
+.next {
+    transition: var(--transition);
+}
+
+.robocup:hover {
+    transition: var(--transition);
+    transform: translateY(-10px);
+    scale: 1.05;
+    color: #0b1625;
+    font-weight: 900;
+}
+
+.next:hover {
+    transition: var(--transition);
+    transform: translateY(-10px);
+    scale: 1.05;
+    color: #0b1625;
+    font-weight: 900;
+}
+
+.robocup img,
+.next img {
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+
 
 @media(max-width:1280px) {
 
@@ -319,6 +498,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 2rem;
 }
 
 .card:hover {
@@ -330,9 +510,150 @@ h2 {
 }
 
 .image-card {
-    width: 100%;
+    max-width: 300px;
     height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-card img {
     object-fit: cover;
+    display: block;
+    position: absolute;
+}
+
+.contato {
+    background-color: var(--color-unimatefinn);
+    min-height: 45vh;
+
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.contato h2 {
+    padding-top: 3rem;
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+.contato label {
+    font-size: 1.4rem;
+}
+
+.contato button {
+    padding: .8rem 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    font-weight: 500;
+    font-size: 1.4rem;
+    transition: var(--transition);
+
+}
+
+.contato button:hover {
+    background-color: var(--color-unimatefinn);
+    color: aqua;
+    transform: translateY(-.8rem);
+}
+
+footer {
+    background-color: var(--color-white);
+}
+
+.espaco-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 5rem;
+    gap: 3rem;
+}
+
+.espaco-footer img {
+    max-width: 150px;
+    height: auto;
+    display: flex;
+    margin: auto;
+}
+
+.sobre-nos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: .5rem;
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+
+.sobre-nos h4 {
+    font-weight: 900;
+    color: var(--color-unimatefinn);
+}
+
+.contato-rodape {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.contato-rodape ol {
+    padding-left: 0;
+}
+
+.contato-rodape h4 {
+    font-weight: 900;
+    color: var(--color-unimatefinn);
+}
+
+.contato-rodape li {
+    font-size: 1.3rem;
+}
+
+.rodape-icones a {
+    color: var(--color-unimatefinn);
+    transition: var(--transition);
+}
+
+.rodape-icones i:hover {
+    transform: translateY(-3px);
+    transition: var(--transition);
+}
+
+.rodape-infos {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem
+}
+
+.rodape-infos h4 {
+    font-weight: 900;
+    color: var(--color-unimatefinn);
+}
+
+.rodape-infos li {
+    font-size: 1.3rem;
+}
+
+.rodape-infos ol {
+    padding-left: 0;
+}
+
+@media(max-width:1145px) {
+    .videos-links {
+        grid-template-columns: 1fr;
+    }
+
+    .competicao {
+        padding: 3rem 1.5rem;
+
+    }
+
+    .cards-competicao {
+        gap: 1.5rem;
+
+    }
+
+    .cards-competicao h3 {
+        font-size: 1.6rem;
+    }
 }
 
 @media(max-width:750px) {
@@ -395,10 +716,16 @@ h2 {
         align-content: end;
     }
 
+    .cards-competicao {
+        grid-template-columns: 1fr;
+    }
+
+    .competicao h2 {
+        font-size: 2.5rem;
+    }
 
     .integrantes {
         grid-template-columns: repeat(1, 1fr);
-
     }
 
     .integrantes h3 {
@@ -408,6 +735,17 @@ h2 {
 
     .integrantes p {
         font-size: 1.5rem;
+    }
+
+    .espaco-footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .espaco-footer img {
+        max-width: 95px;
+        margin-bottom: 1rem;
     }
 }
 
@@ -429,6 +767,36 @@ h2 {
         align-items: center;
         justify-content: center;
     }
+
+}
+
+@media(max-width: 530px) {
+    .espacoIcones {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .caixa {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: .5rem;
+    }
+
+    .competicao {
+        padding: 2rem 1rem;
+    }
+
+    .competicao h2 {
+        font-size: 2rem;
+    }
+
+    .cards-competicao h3 {
+        font-size: 1.4rem;
+    }
+
 }
 
 @media(max-width:370px) {
@@ -438,8 +806,13 @@ h2 {
         gap: 5px;
     }
 
+    .menu {
+        font-size: 1rem;
+    }
+
     .espacoIcones {
         flex-direction: column;
         align-items: center;
     }
+
 }
